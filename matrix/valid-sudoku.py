@@ -10,11 +10,11 @@ class Solution:
                 if val == ".":
                     continue
                 
-                if val in rows:
+                if val in rows[r]:
                     return False
                 rows[r].add(val)
 
-                if val in cols:
+                if val in cols[c]:
                     return False
                 cols[c].add(val)
 
@@ -22,7 +22,7 @@ class Solution:
                 if val in boxes[box_index]:
                     return False
                 boxes[box_index].add(val)
-                
+
         return True
 
 
