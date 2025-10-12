@@ -24,4 +24,6 @@ class Solution:
             l1 = l1.next if l1 else None
             l2 = l2.next if l2 else None
 
+            # [7, [0, [8, [None]]]] for example, linked list
+
         return dummy.next
